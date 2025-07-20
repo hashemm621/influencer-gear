@@ -14,10 +14,10 @@ img {
   height: 100%;
 }
 main > section {
-    margin-top: 100px;
+  margin-top: 100px;
 }
-main{
-    max-width: 1110px;
+main {
+  max-width: 1110px;
   margin: 50px auto;
 }
 /* header section start here */
@@ -97,13 +97,67 @@ header {
 /* header section end here */
 
 /* sponsor section  */
-.sponsor-section{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 60px;
-    align-items: center;
+.sponsor-section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 60px;
+  align-items: center;
 }
 
+/* collection section  */
+
+.collection h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1047px;
+  margin: 0 auto;
+}
+.card {
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+.price {
+  font-size: 1.25rem;
+  color: #3a3a3a;
+  font-weight: 400;
+}
+.star,
+.half-star {
+  color: rgb(251, 130, 0);
+}
+
+.rate {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 0.97rem;
+  color: #3a3a3a;
+}
+.card-description {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #aaa6a6;
+}
+.see-more {
+  text-align: end;
+  margin: 20px 40px;
+  font-size: 1rem;
+  color: #e02c6d;
+  font-weight: bold;
+}
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   header {
@@ -127,24 +181,28 @@ header {
   }
 
   /* sposor section */
-  .sponsor-section{
-    
+  .sponsor-section {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin: 25px 16px;
+    margin: 100px 16px;
     justify-content: center;
     text-align: center;
-    
-
+  }
+  /* collection section */
+  .collection {
+    margin: 25px 16px;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 /* respopnsive for tablet and laptop */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  header, .sponsor-section {
+  header,
+  .sponsor-section,
+  .collection {
     margin: 50px 20px;
   }
-  
-
 }
