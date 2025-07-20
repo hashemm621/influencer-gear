@@ -181,6 +181,31 @@ header {
   margin-top: 16px;
   color: #ffffff;
 }
+
+/* footer section */
+footer{
+  background-color: rgb(10, 8, 38);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+.footer-link a{
+  color: #ffffff;
+}
+footer h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+footer p{
+  font-size: .89rem;
+  font-weight: bold;
+  color: #aaa6a6;
+}
+.footer-link{
+  font-size: 2rem;
+  letter-spacing: 10px;
+}
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   header {
@@ -224,6 +249,10 @@ header {
     flex-direction: column-reverse;
     margin: 25px 16px;
   }
+}
+.footer-link{
+  font-size: 1rem;
+  
 }
 
 /* respopnsive for tablet and laptop */
