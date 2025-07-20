@@ -158,6 +158,29 @@ header {
   color: #e02c6d;
   font-weight: bold;
 }
+
+/* featured section  */
+
+.featured{
+  display: flex;
+  gap: 66px;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-title{
+  font-size: 2.09rem;
+  font-weight: bold;
+  color: #0A0826;
+  margin-bottom: 16px;
+}
+.join{
+  background-color: #e02c6d;
+  padding: 10px 50px 10px 24px;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 16px;
+  color: #ffffff;
+}
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   header {
@@ -195,6 +218,12 @@ header {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* featured section  */
+  .featured{
+    flex-direction: column-reverse;
+    margin: 25px 16px;
+  }
 }
 
 /* respopnsive for tablet and laptop */
@@ -202,7 +231,7 @@ header {
 @media screen and (min-width: 577px) and (max-width: 992px) {
   header,
   .sponsor-section,
-  .collection {
+  .collection, .featured {
     margin: 50px 20px;
   }
 }
